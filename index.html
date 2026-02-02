@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Expense Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <h1>💰 Personal Expense Tracker</h1>
+
+    <div class="toggle-container">
+      <button id="themeToggle">🌙 Dark Mode</button>
+    </div>
+
+    <!-- FORM CARD -->
+    <div class="card form">
+      <input type="number" id="amount" placeholder="Amount">
+
+      <select id="category">
+        <option value="Food">Food</option>
+        <option value="Travel">Travel</option>
+        <option value="Rent">Rent</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <select id="type">
+        <option value="Expense">Expense</option>
+        <option value="Income">Income</option>
+      </select>
+
+      <input type="date" id="date">
+
+      <button id="addBtn">Add Entry</button>
+    </div>
+
+    <!-- SUMMARY CARD -->
+    <div class="card summary">
+      <div>
+        <p>Total Income</p>
+        <h3 class="income">₹<span id="totalIncome">0</span></h3>
+      </div>
+      <div>
+        <p>Total Expense</p>
+        <h3 class="expense">₹<span id="totalExpense">0</span></h3>
+      </div>
+      <div>
+        <p>Balance</p>
+        <h3>₹<span id="balance">0</span></h3>
+      </div>
+    </div>
+
+    <!-- TABLE CARD -->
+    <div class="card">
+      <table>
+        <thead>
+          <tr>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Type</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="expenseList"></tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>

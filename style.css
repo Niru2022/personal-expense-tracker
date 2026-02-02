@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 900px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.form input,
+.form select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form button {
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form button:hover {
+  background: #5a67d8;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.summary p {
+  margin: 0;
+  color: gray;
+}
+
+.summary h3 {
+  margin: 5px 0 0;
+}
+
+.income {
+  color: green;
+}
+
+.expense {
+  color: red;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #f3f4f6;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+/* Theme toggle button */
+.toggle-container {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+#themeToggle {
+  background: #111827;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* DARK MODE STYLES */
+body.dark {
+  background: linear-gradient(135deg, #0f172a, #020617);
+}
+
+body.dark h1 {
+  color: #e5e7eb;
+}
+
+body.dark .card {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+body.dark input,
+body.dark select {
+  background: #020617;
+  color: #e5e7eb;
+  border: 1px solid #334155;
+}
+
+body.dark th {
+  background: #020617;
+}
+
+body.dark td {
+  border-bottom: 1px solid #334155;
+}
+
+body.dark .summary p {
+  color: #9ca3af;
+}
