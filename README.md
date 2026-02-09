@@ -40,4 +40,4 @@ personal-expense-tracker/
 
 👤 Author
 Niranjan Shinde  
-GitHub: https://github.com/Niru2022
+GitHub: https://github.com/niranjan-shinde
